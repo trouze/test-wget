@@ -5,8 +5,7 @@ echo "Creating dbt-projects directory and python virtualenv..."
 mkdir ~/dbt-projects && cd ~/dbt-projects
 $py -m venv env
 echo "Entering virtualenv and installing dbt dependencies..."
-source ~/dbt-projects/env/bin/activate
-$py -m pip install dbt-core dbt-snowflake
+~/dbt-projects/env/bin/python3 -m pip install dbt-core dbt-snowflake
 echo "Installing VScode extensions and opening VScode"
 code --install-extension innoverio.vscode-dbt-power-user
 code .
